@@ -1,5 +1,9 @@
-*{
+* {
     box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #7264d6;
 }
 
 html {
@@ -9,4 +13,124 @@ html {
 body {
     font-family: "Open Sans";
     font-size: 1.6rem;
+}
+
+/* common */
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.logo::after {
+    content: "CeloBank";
+    color: #212832;
+    font-family: "Open Sans";
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75; /* 175% */
+}
+
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 113px;
+    height: 52px;
+    border-radius: 6px;
+    background: #212832;
+}
+
+a {
+    display: inline-block;
+}
+/* header */
+
+.header {
+    padding: 42px 0 8px;
+}
+
+.header__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_group-row {
+    display: flex;
+    align-items: center;
+    gap: 46.5px;
+}
+
+.nav-bar__list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar__item {
+    height: 52px;
+    line-height: 52px;
+    text-align: center;
+    padding: 0 23.5px 0 23.5px;
+    transition: font-weight ease 0.1s;
+}
+
+.nav-bar__item::before {
+    display: block;
+    content: attr(title);
+    height: 0;
+    font-weight: 600;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.nav-bar__item:hover {
+    font-weight: 600;
+}
+
+.nav-bar__item--active {
+    font-weight: 600;
+    position: relative;
+}
+
+.nav-bar__item--active::after {
+    position: absolute;
+    bottom: 11px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    content: "";
+    width: 47px;
+    height: 1px;
+    border-radius: 0.5px;
+    background: #7264d6;
+}
+
+.header__group-actions {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
+
+.header__log-in {
+    color: #212832;
+    font-family: "Open Sans";
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75; /* 175% */
+}
+
+.header__sign-up {
+    color: #fff;
+    font-family: "Open Sans";
+    font-size: 1.6rem;
+    font-weight: 550;
+    line-height: 1.75; /* 175% */
 }
