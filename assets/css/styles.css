@@ -125,6 +125,11 @@ a {
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 1.75; /* 175% */
+    transition: color ease 0.1s;
+}
+
+.header__log-in:hover {
+    color: var(--color-primary);
 }
 
 .header__sign-up {
@@ -133,4 +138,9 @@ a {
     font-size: 1.6rem;
     font-weight: 550;
     line-height: 1.75; /* 175% */
+    transition: opacity ease 0.2s;
+}
+
+.header__sign-up:hover {
+    opacity: 0.7;
 }
