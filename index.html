@@ -14,7 +14,10 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
-        <link rel="stylesheet" href="./assets/css/animation.css">
+        <link rel="stylesheet" href="./assets/css/animation.css" />
+        <!-- AOS -->
+        <link rel="preconnect" href="https://unpkg.com" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <!-- styles -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
     </head>
@@ -61,7 +64,7 @@
                     <div class="main-hero">
                         <section class="hero-content">
                             <h4
-                                class="hero__title animate__animated animate__lightSpeedInLeft"
+                                class="hero__title title animate__animated animate__lightSpeedInLeft"
                             >
                                 Digital Smart Wallet
                             </h4>
@@ -139,7 +142,9 @@
                                     />
                                 </div>
                                 <ul class="hero-phone__list">
-                                    <li class="hero-phone__item animate__animated animate__fadeIn">
+                                    <li
+                                        class="hero-phone__item animate__animated animate__fadeIn"
+                                    >
                                         <div class="hero-phone__group-left">
                                             <img
                                                 src="./assets/icon/reviced.svg"
@@ -157,7 +162,9 @@
                                             <span>Sep 23</span>
                                         </div>
                                     </li>
-                                    <li class="hero-phone__item animate__animated animate__fadeIn">
+                                    <li
+                                        class="hero-phone__item animate__animated animate__fadeIn"
+                                    >
                                         <div class="hero-phone__group-left">
                                             <img
                                                 src="./assets/icon/send.svg"
@@ -175,7 +182,9 @@
                                             <span>Sep 23</span>
                                         </div>
                                     </li>
-                                    <li class="hero-phone__item animate__animated animate__fadeIn">
+                                    <li
+                                        class="hero-phone__item animate__animated animate__fadeIn"
+                                    >
                                         <div class="hero-phone__group-left">
                                             <img
                                                 src="./assets/icon/reviced-2.svg"
@@ -193,7 +202,9 @@
                                             <span>Sep 23</span>
                                         </div>
                                     </li>
-                                    <li class="hero-phone__item animate__animated animate__fadeIn">
+                                    <li
+                                        class="hero-phone__item animate__animated animate__fadeIn"
+                                    >
                                         <div class="hero-phone__group-left">
                                             <img
                                                 src="./assets/icon/bill.svg"
@@ -213,11 +224,15 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="hero-phone__circle animate__animated animate__fadeIn">
+                            <div
+                                class="hero-phone__circle animate__animated animate__fadeIn"
+                            >
                                 <strong>0%</strong>
                                 <span>Interest</span>
                             </div>
-                            <div class="hero-phone__secured animate__animated animate__fadeIn">
+                            <div
+                                class="hero-phone__secured animate__animated animate__fadeIn"
+                            >
                                 <img
                                     src="./assets/icon/secured.svg"
                                     alt="secured"
@@ -228,7 +243,9 @@
                                     <span>SECURED FUNDS</span>
                                 </div>
                             </div>
-                            <div class="hero__deposited animate__animated animate__fadeIn">
+                            <div
+                                class="hero__deposited animate__animated animate__fadeIn"
+                            >
                                 <img
                                     src="./assets/icon/deposited.svg"
                                     alt=""
@@ -241,6 +258,99 @@
                     </div>
                 </div>
             </section>
+            <!-- service -->
+            <section class="service">
+                <div class="container">
+                    <div class="main-service">
+                        <figure class="service__images">
+                            <img
+                                src="./assets/images/service-1.png"
+                                alt="How It Works"
+                                class="service__img"
+                                data-aos="zoom-in-right"
+                            />
+                            <img
+                                src="./assets/images/bg-service-1.png"
+                                alt="background"
+                                class="service__img-bg"
+                                data-aos="zoom-in-right"
+                            />
+                            <img
+                                src="./assets/icon/logo-block.svg"
+                                alt="logo"
+                                class="service__img-logo"
+                                data-aos="zoom-in"
+                            />
+                            <div
+                                class="service__group-trend"
+                                data-aos="zoom-in"
+                            >
+                                <img
+                                    src="./assets/icon/stick-check.svg"
+                                    alt=""
+                                />
+                                <div class="service-group__content">
+                                    <h5 class="service-group__subtitle">
+                                        Congratulations
+                                    </h5>
+                                    <p class="service-group__desc">
+                                        Your account activated
+                                    </p>
+                                </div>
+                            </div>
+                        </figure>
+                        <section
+                            class="service__content"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-center"
+                        >
+                            <h4 class="title service__title">
+                                Digital Smart Wallet
+                            </h4>
+                            <h2 class="service__heading heading-level-2">
+                                How It Works
+                            </h2>
+                            <ul class="service__list">
+                                <li class="service__item">
+                                    <h3 class="service__subtitle">
+                                        1. Open a High Interest Checking account
+                                    </h3>
+                                    <p class="service__desc">
+                                        Fund your bank account with a minimum
+                                        balance of $100. Enroll in 3 minutes or
+                                        less!
+                                    </p>
+                                </li>
+                                <li class="service__item">
+                                    <h3 class="service__subtitle">
+                                        2. 10 point-of-sale transactions each
+                                        Month that are at least $10 each.
+                                    </h3>
+                                    <p class="service__desc">
+                                        Be sure to use your rewards checking
+                                        account as often as possible in order to
+                                        acc APY
+                                    </p>
+                                </li>
+                                <li class="service__item">
+                                    <h3 class="service__subtitle">
+                                        3. Receive up to 5.50% APY
+                                    </h3>
+                                    <p class="service__desc">
+                                        The APY you earn will be based on your
+                                        account balance and satisfying the
+                                        transaction requirement.
+                                    </p>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </section>
         </main>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
