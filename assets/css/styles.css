@@ -68,6 +68,11 @@ a {
 
 .header {
     padding: 42px 0 8px;
+    background-color: #fff;
+    position: sticky;
+    top: -34px;
+    left: 0;
+    z-index: 999;
 }
 
 .header__row {
@@ -371,13 +376,13 @@ a {
 }
 
 .hero-phone__list {
+    margin-top: 28px;
     display: flex;
     flex-direction: column;
-    gap: -28px;
+    gap: 28px;
 }
 
 .hero-phone__item {
-    margin-left: -20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -386,6 +391,13 @@ a {
 .hero-phone__group-left {
     display: flex;
     align-items: center;
+    gap: 24px;
+}
+
+.hero-phone__group-left img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
 }
 
 .hero-phone__group-content {
@@ -525,3 +537,4 @@ a {
     font-weight: 400;
     line-height: 1; /* 100% */
 }
+
