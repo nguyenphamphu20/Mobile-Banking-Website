@@ -46,6 +46,11 @@ body {
     height: 52px;
     border-radius: 6px;
     background: #212832;
+    transition: opacity linear 0.25s;
+}
+
+.btn:hover {
+    opacity: 0.7;
 }
 
 a {
@@ -1134,10 +1139,106 @@ a {
 .testimonial__round {
     width: 12px;
     height: 6px;
-    border: 1px solid #9B9FAB;
+    border: 1px solid #9b9fab;
 }
 
 .testimonial__round--active {
     background: #7264d6;
     border: 1px solid #7264d6;
+}
+
+/* blog */
+.blog {
+    margin-top: 160px;
+}
+
+.blog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog__heading {
+    margin-top: 6px;
+}
+
+.blog__desc {
+    margin-top: 18px;
+    width: 435px;
+    color: #696d76;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+}
+
+.blog__btn {
+    width: 123px;
+    height: 58px;
+
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75; /* 175% */
+}
+
+.blog__body {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+}
+
+.blog__item {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+    padding: 28px;
+    width: 570px;
+    height: 216px;
+    border-radius: 12px;
+    border: 1px solid #dfe2e8;
+    background: #fff;
+    transition: border ease 0.2s, box-shadow ease 0.2s;
+}
+
+.blog__item:hover {
+    border: 1px solid #fff;
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.07);
+}
+
+.blog__item:hover .blog__link {
+    color: #7264D6;
+}
+
+.blog__img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.blog__date {
+    color: #696d76;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.71; /* 171.429% */
+}
+
+.blog__subtitle {
+    margin-top: 10px;
+    width: 332px;
+    color: #212832;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67; /* 166.667% */
+}
+
+.blog__link {
+    margin-top: 20px;
+    color: #696d76;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.63; /* 162.5% */
+    transition: color ease 0.2s;
 }
