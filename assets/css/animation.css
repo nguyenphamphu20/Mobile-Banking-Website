@@ -55,3 +55,28 @@
 .service__group-trend {
     animation-delay: 0.6s;
 }
+
+/* download */
+.download__star--pos-2 {
+    animation-delay: 0.2s !important;
+}
+
+.download__star--pos-3 {
+    animation-delay: 0.6s !important;
+}
+
+.download__star--pos-4 {
+    animation-delay: 1s !important;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0%) rotate(0deg);
+    }
+    50% {
+        transform: translateX(50%) rotate(90deg);
+    }
+    100% {
+        transform: translateX(0%) rotate(180deg);
+    }
+}
